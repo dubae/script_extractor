@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 스크립트 추출기</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
+        .container { border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .download-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover { background-color: #0056b3; }
+        .warning { background-color: #fffbe6; border: 1px solid #ffe58f; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        .footer { margin-top: 30px; font-size: 12px; color: #888; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 애니메이션 스크립트 추출기</h1>
+        <p>이 프로그램은 MP4 동영상 파일에서 음성을 인식하여 타임스탬프가 포함된 스크립트(.txt)를 추출합니다.</p>
+        
+        <h3>✨ 주요 기능</h3>
+        <ul>
+            <li>여러 MP4 파일 일괄 처리</li>
+            <li>Whisper 모델 선택 기능 (base, medium, large 등)</li>
+            <li>실시간 작업 진행률 표시</li>
+            <li>처리 완료된 스크립트 자동 저장</li>
+        </ul>
+
+        <hr>
+
+        <h3>🚀 다운로드</h3>
+        <p>사용하시는 운영체제에 맞는 버전을 다운로드하세요.</p>
+        
+        <p>
+            <a href="https://github.com/<사용자이름>/<레파지토리이름>/releases/download/v1.0.0/ScriptExtractor.exe" class="download-button">
+                다운로드 (Windows .exe)
+            </a>
+            <a href="https://github.com/<사용자이름>/<레파지토리이름>/releases/download/v1.0.0/ScriptExtractor.app.zip" class="download-button" style="background-color: #555;">
+                다운로드 (macOS .zip)
+            </a>
+        </p>
+
+        <div class="warning">
+            <strong>⚠️ 주의 사항</strong><br>
+            <ul>
+                <li>프로그램을 처음 실행하면 음성 인식 모델(Whisper)을 다운로드하기 때문에 시간이 다소 걸릴 수 있습니다. (인터넷 연결 필수)</li>
+                <li><b>(1단계에서 imageio-ffmpeg가 실패했을 경우)</b> 이 프로그램은 <code>ffmpeg</code>이 필요합니다. 만약 프로그램이 작동하지 않으면 <a href="https://ffmpeg.org/download.html" target="_blank">여기</a>에서 <code>ffmpeg</code>을 별도로 설치하고 시스템 PATH에 추가해야 할 수 있습니다.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        이 프로젝트는 오픈소스이며, 코드는 <a href="https://github.com/<사용자이름>/<레파지토리이름>">여기</a>에서 확인하실 수 있습니다.
+    </div>
+</body>
+</html>
